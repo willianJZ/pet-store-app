@@ -18,6 +18,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardProductComponent implements OnInit{
 
+  cantidad: number = 0;
 
 //Inicio objeto de producto.
   product = {
@@ -29,6 +30,14 @@ export class CardProductComponent implements OnInit{
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addProduct() {
+    this.cantidad++;
+  }
+
+  removeProduct() {
+    this.cantidad--;
   }
 
 }

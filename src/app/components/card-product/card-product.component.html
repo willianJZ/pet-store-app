@@ -15,5 +15,10 @@
           <img [src]="product.image" alt="" />
         </figure>
       </div>
+      <div class="product-counter">
+        <button (click)="addProduct()">+</button>
+        <p>{{ cantidad }}</p>
+        <button (click)="removeProduct()">-</button>
+      </div>
     </div>
   </div>
