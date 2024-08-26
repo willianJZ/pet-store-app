@@ -8,11 +8,11 @@
       />
       <div class="product-info">
         <div>
-          <p>$120,00</p>
-          <p>Bike</p>
+          <p>${{product.price}}</p>
+          <p>{{product.name}}</p>
         </div>
         <figure>
-          <img src="././././assets/icons/bt_add_to_cart.svg" alt="" />
+          <img [src]="product.image" alt="" />
         </figure>
       </div>
     </div>
