@@ -2,7 +2,7 @@
 <div class="cards-container">
     <div class="product-card">
       <img
-        src={{product.image}}
+        [src]="product.image"
         alt=""
       />
       <div class="product-info">
@@ -19,5 +19,8 @@
         <p>{{ cantidad }}</p>
         <button (click)="removeProduct()">-</button>
       </div>
+    </div>
+    <div *ngIf="soldOut" class="product-soldOut">
+      <b>Producto Agotado</b>
     </div>
   </div>
