@@ -21,7 +21,7 @@ export class AppComponent {
 	// Array de Objetos de productos
   products = [
     {
-      name: 'Bike_1',
+      name: 'Bike-1',
       price: 120,
       description: 'Product Description',
       inventory: 10,
