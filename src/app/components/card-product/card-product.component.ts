@@ -9,7 +9,7 @@ export class CardProductComponent {
 
 }*/
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-product',
@@ -23,7 +23,7 @@ export class CardProductComponent implements OnInit{
   soldOut: boolean = false;
 
 //Inicio objeto de producto.
-product = {
+@Input() product = {
   name: 'Bike',
   price: 120,
   description: 'Product Description',
