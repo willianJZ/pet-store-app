@@ -1,0 +1,50 @@
+/* Estilos generales del formulario */
+form {
+    max-width: 400px; /* Tamaño máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 20px; /* Espaciado interno del formulario */
+    border: 1px solid #ddd; /* Borde del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo de los inputs */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno de los inputs */
+    margin-bottom: 15px; /* Espacio entre los inputs */
+    border: 1px solid #ccc; /* Borde de los inputs */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilo del placeholder */
+input::placeholder {
+    color: #aaa; /* Color del texto del placeholder */
+}
+
+/* Estilo del botón */
+button[type="submit"] {
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Estilo del botón al pasar el mouse sobre él */
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Estilo del botón deshabilitado */
+button[type="submit"][disabled] {
+    background-color: #ccc; /* Color de fondo del botón deshabilitado */
+    cursor: not-allowed; /* Cursor de prohibido al pasar sobre el botón deshabilitado */
+}

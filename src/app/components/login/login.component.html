@@ -1,0 +1,19 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div>
+    <label>Correo  Electronico: </label>
+    <input type="email" formControlName="email" placeholder="Email">
+</div>
+<div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')"?.dirty>
+<p *ngIf="loginForm.get('email')?.hasError('requiered')">El correo es requerido</p>
+<p *ngIf="loginForm.get('email')?.hasError('email')">El correo no es valido</p>
+</div>
+<div>
+    <label>Contraseña: </label>
+    <input type="password" formControlName="password" placeholder="Password">
+</div>
+<div *ngIf="loginForm.get('password')?.errors && loginForm.get('pasword')?.dirty">
+    <p *ngIf="loginForm.get('password')?.hasError('requiered')">La Contraseña es requerida</p>
+</div>
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+</form>
+
